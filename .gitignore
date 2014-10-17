@@ -10,3 +10,5 @@ Thumbs.db
 coder-base/apps/
 coder-base/static/apps/
 coder-base/views/apps/
+
+npm-debug.log
