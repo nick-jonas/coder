@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Coder</title>
+    <meta charset="utf-8">
+    <!-- Standard Coder Includes -->
+    <script>
+        var appname = "{{app_name}}"; //app name (id) of this app
+        var appurl = "{{&app_url}}";
+        var staticurl = "{{&static_url}}"; //base path to your static files /static/apps/yourapp
+    </script>
+    <link href="/static/apps/coderlib/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="/static/common/js/jquery.min.js"></script>
+    <script src="/static/common/ace-min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/apps/coderlib/js/index.js"></script>
+    <script>
+        Coder.addBasicNav();
+    </script>
+    <!-- End Coder Includes -->
+
+    <!-- This app's includes -->
+    <link href="{{&static_url}}/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="{{&static_url}}/js/index.js"></script>
+    <!-- End apps includes -->
+</head>
+<body class="">
+    <div class="pagecontent screen">
+        <div class="weather current"><i class="icon {{weather.0.icon}}"></i><span class="temp">{{weather.0.temp}}</span></div>
+        <div class="hourly-container">
+            <div class="left-col">
+                <div class="weather"><span class="time">{{weather.1.hour}}</span><i class="icon {{weather.1.icon}}"></i><span class="temp">{{weather.1.temp}}</span></div>
+                <div class="weather"><span class="time">{{weather.2.hour}}</span><i class="icon {{weather.2.icon}}"></i><span class="temp">{{weather.2.temp}}</span></div>
+                <div class="weather"><span class="time">{{weather.3.hour}}</span><i class="icon {{weather.3.icon}}"></i><span class="temp">{{weather.3.temp}}</span></div>
+                <div class="weather"><span class="time">{{weather.4.hour}}</span><i class="icon {{weather.4.icon}}"></i><span class="temp">{{weather.4.temp}}</span></div>
+            </div>
+            <div class="right-col">
+                <div class="weather"><span class="time">{{weather.5.hour}}</span><i class="icon {{weather.5.icon}}"></i><span class="temp">{{weather.5.temp}}</span></div>
+                <div class="weather"><span class="time">{{weather.6.hour}}</span><i class="icon {{weather.6.icon}}"></i><span class="temp">{{weather.6.temp}}</span></div>
+                <div class="weather"><span class="time">{{weather.7.hour}}</span><i class="icon {{weather.7.icon}}"></i><span class="temp">{{weather.7.temp}}</span></div>
+                <div class="weather"><span class="time">{{weather.8.hour}}</span><i class="icon {{weather.8.icon}}"></i><span class="temp">{{weather.8.temp}}</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

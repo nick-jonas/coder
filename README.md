@@ -5,6 +5,13 @@ Coder is a free piece of software that turns a Raspberry Pi into a super simple 
 
 http://goo.gl/coder
 
+#To Install
+
+- SSH into your pi as the coder user ```sudo su -s /bin/bash coder```
+- Replace coder-dist compeletely with this cloned repo
+- Install NPM dependencies ```npm install ./coder-base.json ./raspbian-addons/home/coder/coder-dist/coder-base/package.json```
+
+
 ### What You'll Find Here
 
 #### coder-base
