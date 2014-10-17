@@ -22,8 +22,4 @@ base=$1
 ./install_app.sh coder $base ./common/
 ./install_app.sh coderlib $base ./common/
 ./install_app.sh editor $base ./common/
-./install_app.sh eyeball $base ./common/
 ./install_app.sh game2d $base ./common/
-./install_app.sh hello_coder $base ./common/
-./install_app.sh space_rocks_ $base ./common/
-
