@@ -6,3 +6,7 @@ coder-base/device.json
 
 .DS_Store
 Thumbs.db
+
+coder-base/apps/
+coder-base/static/apps/
+coder-base/views/apps/
