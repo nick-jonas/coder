@@ -8,19 +8,34 @@ http://goo.gl/coder
 #To Install
 
 - SSH into your pi as the coder user ```sudo su -s /bin/bash coder```
-- Replace coder-dist compeletely with this cloned repo
+- Replace coder-dist compeletely with this cloned repo and rename to coder-dist
+
+```
+git clone https://github.com/nick-jonas/coder.git && mv coder coder-dist
+```
+
+
 - Install NPM dependencies 
 
 ```
-npm install ./coder-base.json ./raspbian-addons/home/coder/coder-dist/coder-base/package.json
+# from repo root
+ cd ./coder-base/ 
+ /opt/node/bin/npm install
+
+# from repo root
+ cd ./raspbian-addons/home/coder/coder-dist/coder-base/
+ /opt/node/bin/npm install
 ```
 
 - Install Apps
 
 ```
+# from repo root
 cd coder-apps
-./install_pi.sh
+./install_pi.sh ../coder-base/
 ```
+
+- Visit coder.local (or IP of device) in browser, and config your password
 
 
 ### What You'll Find Here
