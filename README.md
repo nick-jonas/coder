@@ -38,6 +38,36 @@ cd coder-apps
 - Visit coder.local (or IP of device) in browser, and config your password
 
 
+#Developing
+
+##Mounting a Remote Drive
+
+To mount the RPi file system and work over SSH, [use this tutorial.](http://www.danielandrade.net/2013/10/28/mounting-a-filesystem-via-ssh-on-osx-mavericks/)
+
+```
+sshfs coder@<ip address>:/ ~/development/sshfs-mount
+```
+
+##Using a Console Cable
+
+Plug Console Cable into USB, and using the following:
+
+Black > GND
+Red > 5v
+White > TXD
+Green > RXD
+
+```
+screen /dev/cu.PL2303-00001004 115200
+```
+
+PL2303... is the device name and differs everytime.  115200 is the Baud Rate.
+
+
+[Instructions here.](https://learn.adafruit.com/downloads/pdf/adafruits-raspberry-pi-lesson-5-using-a-console-cable.pdf)
+
+
+
 ### What You'll Find Here
 
 #### coder-base
