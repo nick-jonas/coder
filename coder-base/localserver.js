@@ -32,6 +32,10 @@ var util = require('util');
 var cons = require('consolidate');
 var params = require('express-params');
 var querystring = require('querystring');
+var env = null;
+if(fs.existsSync('./env.js')){
+    env = require('./env').env;
+}
 
 var loadApp = function( loadpath ) {
 
@@ -88,6 +92,8 @@ var apphandler = function( req, res, appdir ) {
     userapp.settings.device_name = auth.getDeviceName();
     userapp.settings.coder_owner = auth.getCoderOwner();
     userapp.settings.coder_color = auth.getCoderColor();
+    userapp.settings.env = env;
+
     if ( userapp.settings.device_name === "" ) {
         userapp.settings.device_name = "Coder";
     }

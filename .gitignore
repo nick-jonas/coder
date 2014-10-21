@@ -3,6 +3,7 @@ node_modules
 *.pyc
 coder-base/certs
 coder-base/device.json
+coder-base/env.js
 
 .DS_Store
 Thumbs.db
