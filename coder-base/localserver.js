@@ -64,12 +64,11 @@ var apphandler = function( req, res, appdir ) {
     var apppath = req.params[1];
     var modpath = appdir + appname;
     var userapp = loadApp( modpath + "/app" );
-    
 
     util.log( "GET: " + apppath + " " + appname );
 
     //Redirect to sign-in for unauthenticated users
-    publicAllowed = ["auth", "weather"]; //apps that are exempt from any login (should only be auth)
+    publicAllowed = ["auth", "queue"]; //apps that are exempt from any login (should only be auth)
     auth = require(appdir + "auth" + "/app");
     user = auth.isAuthenticated(req, res);
     if ( !user && publicAllowed.indexOf( appname ) < 0) {

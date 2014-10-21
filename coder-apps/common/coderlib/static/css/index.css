@@ -55,6 +55,10 @@ H2 {
     text-transform: uppercase;
 }
 
+.queue_mode #coder_basicnav{
+    display:none;
+}
+
 #coder_basicnav {
     position: fixed;
     top:0;
@@ -95,10 +99,6 @@ H2 {
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
-}
-
-.pi #coder_basicnav, .RPi #coder_basicnav, .raspi #coder_basicnav, .rasberrypi #coder_basicnav, .rpi #coder_basicnav{
-    display:none;
 }
 
 #coder_basicnav .coder_editbutton {
