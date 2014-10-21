@@ -23,7 +23,7 @@
     <script src="{{&static_url}}/js/index.js"></script>
     <!-- End apps includes -->
 </head>
-<body class="{{&env}}">
+<body class="{{&body_classes}}">
     <div class="pagecontent screen">
         <div class="weather current"><i class="icon {{weather.0.icon}}"></i><span class="temp">{{weather.0.temp}}</span></div>
         <div class="hourly-container">
@@ -41,5 +41,6 @@
             </div>
         </div>
     </div>
+    <div class="test-rect"></div>
 </body>
 </html>

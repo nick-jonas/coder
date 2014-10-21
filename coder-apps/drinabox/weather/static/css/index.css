@@ -123,3 +123,21 @@ clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day,
   background-size:contain;
   background-repeat: no-repeat;
 }
+
+.test-rect{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 240px;
+    width: 320px;
+    background: red;
+    z-index: 10;
+    -webkit-transform: scaleX(0);
+    -webkit-animation: test-anim 5s infinite;
+}
+
+@-webkit-keyframes test-anim {
+  0%   { -webkit-transform: scaleX(0); }
+  50% { -webkit-transform: scaleX(1);
+  100% { -webkit-transform: scaleX(0); }
+}

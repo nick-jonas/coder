@@ -16,12 +16,14 @@ exports.post_routes = [
 ];
 
 exports.index_handler = function( req, res ) {
+
     var tmplvars = {};
     tmplvars['static_url'] = exports.settings.staticurl;
     tmplvars['app_name'] = exports.settings.appname;
     tmplvars['app_url'] = exports.settings.appurl;
     tmplvars['device_name'] = exports.settings.device_name;
     tmplvars['env'] = exports.settings.env;
+    tmplvars['body_classes'] = exports.settings.body_classes;
     
     // get weather
     var coord = ['40.7127', '-74.0059'];
