@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     border: 0;
     padding: 0;
+    overflow:hidden;
 }
 
 body {
@@ -95,6 +96,11 @@ H2 {
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
+.pi #coder_basicnav, .RPi #coder_basicnav, .raspi #coder_basicnav, .rasberrypi #coder_basicnav, .rpi #coder_basicnav{
+    display:none;
+}
+
 #coder_basicnav .coder_editbutton {
     position: absolute;
     right: 0px;

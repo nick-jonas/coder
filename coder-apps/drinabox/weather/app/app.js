@@ -21,6 +21,7 @@ exports.index_handler = function( req, res ) {
     tmplvars['app_name'] = exports.settings.appname;
     tmplvars['app_url'] = exports.settings.appurl;
     tmplvars['device_name'] = exports.settings.device_name;
+    tmplvars['env'] = exports.settings.env;
     
     // get weather
     var coord = ['40.7127', '-74.0059'];
